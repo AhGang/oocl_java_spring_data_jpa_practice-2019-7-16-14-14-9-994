@@ -19,6 +19,12 @@ public class CompanyResource {
     public List<Company> getCompany() {
         return companyRepository.findAll();
     }
+//One By One
+//    @PostMapping()
+//    public Company addCompany(@RequestBody Company company) {
+//        companyRepository.save(company);
+//        return companyRepository.findById(company.getId()).get();
+//    }
 
     @PostMapping()
     public Company addCompany(@RequestBody Company company) {
